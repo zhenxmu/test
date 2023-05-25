@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638204207598689824
-    m_Hash: 2465031950
+      ticks: 638206173935232530
+    m_Hash: 1411460284
   m_LockFileStatus:
     m_FilePath: D:/gitarea/test/testz/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638204207668178908
-    m_Hash: 2519961591
+      ticks: 638206173935232530
+    m_Hash: 531634999
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
