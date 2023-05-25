@@ -137,8 +137,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6279868986112492674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.21, y: 1.34, z: 0}
-  m_LocalScale: {x: 5.065313, y: 5.065313, z: 5.065313}
+  m_LocalPosition: {x: -1.1257, y: 0.8711, z: 0}
+  m_LocalScale: {x: 7.019004, y: 7.019004, z: 7.019004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 84469181}
@@ -218,6 +218,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!70 &1773441449204276501
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
