@@ -61,6 +61,11 @@
     <Compile Include="Assets\Scripts\AttackControl.cs" />
     <Compile Include="Assets\Scripts\fireball.cs" />
     <Compile Include="Assets\Scripts\AttckItem.cs" />
+    <Compile Include="Assets\Scripts\FireController.cs" />
+    <Compile Include="Assets\Scripts\BallController.cs" />
+    <Compile Include="Assets\Scripts\HorseController.cs" />
+    <Compile Include="Assets\Scripts\BorneController.cs" />
+    <Compile Include="Assets\Scripts\MasterController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\PicSource\场景-荒废森林\Social\Autor_note.txt" />
