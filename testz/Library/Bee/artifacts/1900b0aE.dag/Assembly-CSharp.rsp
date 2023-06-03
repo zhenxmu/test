@@ -350,8 +350,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/AttackControl.cs"
 "Assets/Scripts/AttckItem.cs"
+"Assets/Scripts/BallController.cs"
+"Assets/Scripts/BorneController.cs"
 "Assets/Scripts/fireball.cs"
 "Assets/Scripts/Health.cs"
+"Assets/Scripts/HorseController.cs"
+"Assets/Scripts/MasterController.cs"
 "Assets/Scripts/MoveControler.cs"
 -langversion:9.0
 
