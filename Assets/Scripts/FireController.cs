@@ -7,7 +7,7 @@ public class FireController : MonoBehaviour
     public Animator animator;
     public GameObject fireballPrefab; // 火球预制体
     public float fireballSpeed = 5f; // 火球速度
-    public float fireballInterval = 3f; // 发射火球的间隔时间
+    public float fireballInterval = 2f; // 发射火球的间隔时间
     private float lastFireballTime = 0f; // 上一次发射火球的时间
     public int health;
     public int damage;

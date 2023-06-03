@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 794605361503996931}
   - component: {fileID: 5161089925024116258}
   - component: {fileID: 132307306362333670}
-  - component: {fileID: 8481219129974406839}
-  - component: {fileID: 2198818883228560374}
   m_Layer: 3
   m_Name: FireBallMonster
   m_TagString: Enermy
@@ -110,7 +108,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!70 &794605361503996931
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -161,35 +158,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 500
---- !u!114 &8481219129974406839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2198818883228560366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7b88364597f7474cbfcfb12e42b6eba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireballPrefab: {fileID: 0}
-  hero: {fileID: 0}
---- !u!114 &2198818883228560374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2198818883228560366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f26b7cdf295842b4e8426345f7a927b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  fireballPrefab: {fileID: 2945926918948754989, guid: c60944eaa3281d54d98b3125836dd6eb, type: 3}
-  fireballSpeed: 5
-  fireballInterval: 3
-  health: 0
-  damage: 0

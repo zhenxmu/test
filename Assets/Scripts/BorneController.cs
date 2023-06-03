@@ -22,22 +22,7 @@ public class BorneController : MonoBehaviour
     {
         wait = waitTime;
         animator = GetComponent<Animator>();
-    }
-    private void OnTriggerStay2D(Collider2D other)//攻击目标判定
-    {
-        if (Vector2.Distance(other.transform.position, transform.position) <= findistance)//如果碰撞体距离小于搜寻目标距离
-        {
-            if (target)
-            {
-
-            }
-            else
-            {
-                if (other.gameObject.tag == "Player")
-                    target = other.transform;
-            }
-
-        }
+        target = GameObject.FindGameObjectWithTag("Hero").GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -48,62 +33,65 @@ public class BorneController : MonoBehaviour
         attack = false;
         if (target)//是否找到攻击目标
         {
-
-            if (Vector2.Distance(target.position, transform.position) > radiusdistance)//如果攻击目标在攻击范围外，向目标移动
+            float distance = (transform.position - target.position).sqrMagnitude;
+            if (distance < findistance)//如果攻击目标在攻击范围外，向目标移动
             {
                 animator.SetBool("Attack", attack);
                 animator.SetBool("Run", true);
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
                 if (transform.position.x < target.position.x)
                 {
-                    transform.eulerAngles = new Vector3(0, -180, 0);
-                }
-                else
-                {
                     transform.eulerAngles = new Vector3(0, 0, 0);
                 }
-            }
-            else//在攻击范围内，攻击目标
-            {
-                attack = true;
-                animator.SetBool("Attack", attack);
-                animator.SetBool("Run", false);
-            }
-        }
-        else//没找到攻击目标，则左右移动
-        {
-            transform.position = Vector2.MoveTowards(transform.position, movePos[i].position, speed * Time.deltaTime);
-
-            if (Vector2.Distance(transform.position, movePos[i].position) < 0.1f)
-            {
-                if (waitTime > 0)
-                {
-                    waitTime -= Time.deltaTime;
-                }
                 else
                 {
-                    if (movingRight)
-                    {
-                        transform.eulerAngles = new Vector3(0, -180, 0);
-                        movingRight = false;
-                    }
-                    else
-                    {
-                        transform.eulerAngles = new Vector3(0, 0, 0);
-                        movingRight = true;
-                    }
-                    if (i == 0)
-                    {
-                        i = 1;
-                    }
-                    else
-                    {
-                        i = 0;
-                    }
-                    waitTime = wait;
+                    transform.eulerAngles = new Vector3(0, -180, 0);
+                }
+                if (distance < radiusdistance)
+                {
+                    attack = true;
+                    animator.SetBool("Attack", attack);
+                    animator.SetBool("Run", false);
+                  
                 }
             }
+            else//左右移动
+            {
+                transform.position = Vector2.MoveTowards(transform.position, movePos[i].position, speed * Time.deltaTime);
+
+                if (Vector2.Distance(transform.position, movePos[i].position) < 0.1f)
+                {
+                    if (waitTime > 0)
+                    {
+                        waitTime -= Time.deltaTime;
+                    }
+                    else
+                    {
+                        if (movingRight)
+                        {
+                            transform.eulerAngles = new Vector3(0, -180, 0);
+                            movingRight = false;
+                        }
+                        else
+                        {
+                            transform.eulerAngles = new Vector3(0, 0, 0);
+                            movingRight = true;
+                        }
+                        if (i == 0)
+                        {
+                            i = 1;
+                        }
+                        else
+                        {
+                            i = 0;
+                        }
+                        waitTime = wait;
+                    }
+                }
+            }
+
         }
+      
     }
     //受伤害判断
     public void TakeDamage(int damage)

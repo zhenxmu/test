@@ -130,9 +130,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 84469180, guid: 57620e193b26c3546bbfb804729f2aa2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685105310, guid: 57620e193b26c3546bbfb804729f2aa2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6279868986112492674, guid: 57620e193b26c3546bbfb804729f2aa2, type: 3}
       propertyPath: m_Name
       value: Hero
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279868986112492674, guid: 57620e193b26c3546bbfb804729f2aa2, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6279868986112492676, guid: 57620e193b26c3546bbfb804729f2aa2, type: 3}
       propertyPath: m_RootOrder
@@ -140,11 +152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6279868986112492676, guid: 57620e193b26c3546bbfb804729f2aa2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28.843647
+      value: -23.58
       objectReference: {fileID: 0}
     - target: {fileID: 6279868986112492676, guid: 57620e193b26c3546bbfb804729f2aa2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.8571072
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 6279868986112492676, guid: 57620e193b26c3546bbfb804729f2aa2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -256,14 +268,105 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202972254}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.25, y: -0.26, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -18.250015, y: -0.26000023, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2466212338456372463}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &213914313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 213914314}
+  m_Layer: 0
+  m_Name: HorsePos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &213914314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213914313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 25.09, y: 5.58, z: 0.08919692}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &238403868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7890870191365492902, guid: c9ea4f55e582cd047a4a6985c8ffedf4, type: 3}
+  m_PrefabInstance: {fileID: 1086360586}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &238403874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238403868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802ce054b29b4664e9168be5b0228eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  waitTime: 0.5
+  movePos:
+  - {fileID: 507913471}
+  - {fileID: 847728646}
+  animator: {fileID: 1226647323428715177, guid: c9ea4f55e582cd047a4a6985c8ffedf4, type: 3}
+  health: 10
+  damage: 0
+  target: {fileID: 0}
+  findistance: 6
+  radiusdistance: 1
+  attack: 0
+--- !u!1 &306914715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 306914716}
+  m_Layer: 0
+  m_Name: HorsePos2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &306914716
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306914715}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 39.21, y: 5.58, z: 0.08919692}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &323308167
 PrefabInstance:
@@ -316,6 +419,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5368780870161875657, guid: 45ed5dbc8ff885941a2ea1656fcd2e11, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 6827592099912840978, guid: 45ed5dbc8ff885941a2ea1656fcd2e11, type: 3}
     - target: {fileID: 5368780870161875679, guid: 45ed5dbc8ff885941a2ea1656fcd2e11, type: 3}
       propertyPath: m_Name
       value: PurpleMaster
@@ -615,6 +722,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &507913470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 507913471}
+  m_Layer: 0
+  m_Name: BornePos2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &507913471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507913470}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.73, y: 2.9, z: -0.47823495}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &633203132
 GameObject:
   m_ObjectHideFlags: 0
@@ -18965,6 +19103,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &847728645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 847728646}
+  m_Layer: 0
+  m_Name: BornePos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &847728646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847728645}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.66, y: 2.76, z: -0.47823495}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &938060060
 GameObject:
   m_ObjectHideFlags: 0
@@ -19188,7 +19357,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireBallMonster (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 9fdc101e3ae2f974da21dcdb551145f8, type: 3}
 --- !u!1001 &1086360586
 PrefabInstance:
@@ -19245,8 +19415,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: NightBorne
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7890870191365492907, guid: c9ea4f55e582cd047a4a6985c8ffedf4, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7890870191365492907, guid: c9ea4f55e582cd047a4a6985c8ffedf4, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1226647323428715177, guid: c9ea4f55e582cd047a4a6985c8ffedf4, type: 3}
+    - target: {fileID: 7890870191365492907, guid: c9ea4f55e582cd047a4a6985c8ffedf4, type: 3}
+      propertyPath: movePos.Array.data[0]
+      value: 
+      objectReference: {fileID: 507913471}
+    - target: {fileID: 7890870191365492907, guid: c9ea4f55e582cd047a4a6985c8ffedf4, type: 3}
+      propertyPath: movePos.Array.data[1]
+      value: 
+      objectReference: {fileID: 847728646}
+    m_RemovedComponents:
+    - {fileID: 7890870191365492907, guid: c9ea4f55e582cd047a4a6985c8ffedf4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c9ea4f55e582cd047a4a6985c8ffedf4, type: 3}
+--- !u!1 &1130561663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1130561664}
+  m_Layer: 0
+  m_Name: Borne1Pos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1130561664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130561663}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 41.6, y: 2.2, z: -0.6120965}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1226263989
 GameObject:
   m_ObjectHideFlags: 0
@@ -19415,11 +19633,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1488628539 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6279868986112492674, guid: 57620e193b26c3546bbfb804729f2aa2, type: 3}
-  m_PrefabInstance: {fileID: 190356695}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1605486663
 GameObject:
   m_ObjectHideFlags: 0
@@ -19559,14 +19772,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireBallMonster
       objectReference: {fileID: 0}
-    - target: {fileID: 8481219129974406839, guid: 9fdc101e3ae2f974da21dcdb551145f8, type: 3}
-      propertyPath: hero
-      value: 
-      objectReference: {fileID: 1488628539}
-    - target: {fileID: 8481219129974406839, guid: 9fdc101e3ae2f974da21dcdb551145f8, type: 3}
-      propertyPath: fireballPrefab
-      value: 
-      objectReference: {fileID: 102737847433911976, guid: c60944eaa3281d54d98b3125836dd6eb, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fdc101e3ae2f974da21dcdb551145f8, type: 3}
 --- !u!1 &1661080625
@@ -19737,6 +19942,60 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1898602453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2198818883228560366, guid: 9fdc101e3ae2f974da21dcdb551145f8, type: 3}
+  m_PrefabInstance: {fileID: 1629617094}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1898602462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898602453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f26b7cdf295842b4e8426345f7a927b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2699062550986683275, guid: 9fdc101e3ae2f974da21dcdb551145f8, type: 3}
+  fireballPrefab: {fileID: 102737847433911976, guid: c60944eaa3281d54d98b3125836dd6eb, type: 3}
+  fireballSpeed: 5
+  fireballInterval: 2
+  health: 0
+  damage: 0
+--- !u!1 &1903637754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1903637755}
+  m_Layer: 0
+  m_Name: Borne1Pos2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1903637755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903637754}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 64.1, y: 2.4, z: -0.6120965}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1947591534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19788,6 +20047,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7916006334889286226, guid: 9fe0652f7636baf43a3ea159cff4ca1e, type: 3}
+      propertyPath: movePos.Array.data[0]
+      value: 
+      objectReference: {fileID: 213914314}
+    - target: {fileID: 7916006334889286226, guid: 9fe0652f7636baf43a3ea159cff4ca1e, type: 3}
+      propertyPath: movePos.Array.data[1]
+      value: 
+      objectReference: {fileID: 306914716}
     - target: {fileID: 7916006334889286255, guid: 9fe0652f7636baf43a3ea159cff4ca1e, type: 3}
       propertyPath: m_Name
       value: GhostHorse
@@ -19849,6 +20116,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: NightBorne (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7890870191365492907, guid: c9ea4f55e582cd047a4a6985c8ffedf4, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1226647323428715177, guid: c9ea4f55e582cd047a4a6985c8ffedf4, type: 3}
+    - target: {fileID: 7890870191365492907, guid: c9ea4f55e582cd047a4a6985c8ffedf4, type: 3}
+      propertyPath: movePos.Array.data[0]
+      value: 
+      objectReference: {fileID: 1903637755}
+    - target: {fileID: 7890870191365492907, guid: c9ea4f55e582cd047a4a6985c8ffedf4, type: 3}
+      propertyPath: movePos.Array.data[1]
+      value: 
+      objectReference: {fileID: 1130561664}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9ea4f55e582cd047a4a6985c8ffedf4, type: 3}
 --- !u!1 &1777148769253809849

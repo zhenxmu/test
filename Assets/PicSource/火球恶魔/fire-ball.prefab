@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7927062406788602813}
   - component: {fileID: 6919469389237632995}
   - component: {fileID: 6476323954315468768}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: fire-ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &3644765882526515324
 BoxCollider2D:
   m_ObjectHideFlags: 0
