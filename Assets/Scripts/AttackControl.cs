@@ -58,7 +58,7 @@ public class AttackControl : MonoBehaviour
         if (other.CompareTag("Enermy"))
         {
             // 对碰撞到的物体施加向右的力
-            other.attachedRigidbody.AddForce(Vector3.right * forceAmount, ForceMode2D.Impulse);
+            //other.attachedRigidbody.AddForce(Vector3.right * forceAmount, ForceMode2D.Impulse);
             Animator anim2 = other.GetComponent<Animator>();
             anim2.SetTrigger("Attacked");
           

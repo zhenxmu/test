@@ -7,6 +7,7 @@ public class MoveControler : MonoBehaviour
         private Rigidbody2D rg;
         private Collider2D coll;
         private Animator anim;
+    private SpriteRenderer sprite;
 
     //public GameObject lift;//托举物品
     //public float dis = 0;
@@ -46,6 +47,7 @@ public class MoveControler : MonoBehaviour
             rg = GetComponent<Rigidbody2D>();
             coll = GetComponent<Collider2D>();
             anim = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
             //lift.SetActive(false);
             speed = moveSpeed;
         }
@@ -74,6 +76,7 @@ public class MoveControler : MonoBehaviour
                 isInvincible = false;
             }
         }
+        
         //下蹲
         //if (Input.GetKey(KeyCode.S))
         //{
@@ -95,11 +98,12 @@ public class MoveControler : MonoBehaviour
         private void FixedUpdate()
         {
 
-            isGround = coll.IsTouchingLayers(ground);
-            groundMovement();
-            Jump();
-            switchJump();
-        }
+        isGround = coll.IsTouchingLayers(ground);
+        groundMovement();
+        Jump();
+        switchJump();
+
+    }
     //左右移动逻辑
         void groundMovement()
         {
@@ -109,31 +113,33 @@ public class MoveControler : MonoBehaviour
                 if (Input.GetKey(KeyCode.A))
                 {
                     h = -1;
+                    sprite.flipX = true;
                     anim.SetBool("Move", true);
-                    //加速
-                    //if (Input.GetKey(KeyCode.LeftShift))
-                    //{
-                    //    moveSpeed = 4;
-                    //}
-                    //else
-                    //{
-                    //    moveSpeed = speed;
-                    //}
-
+                //加速
+                    if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    moveSpeed=10;
                 }
+                else
+                {
+                    moveSpeed = speed;
+                }
+
+            }
                 else if (Input.GetKey(KeyCode.D))
                 {
                     h = 1;
                     anim.SetBool("Move", true);
-                    //if (Input.GetKey(KeyCode.LeftShift))
-                    //{
-                    //    moveSpeed = 4;
-                    //}
-                    //else
-                    //{
-                    //    moveSpeed = speed;
-                    //}
+                sprite.flipX = false;
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    moveSpeed =10;
                 }
+                else
+                {
+                    moveSpeed = speed;
+                }
+            }
                 else
                 {
                     h = 0;
@@ -141,34 +147,35 @@ public class MoveControler : MonoBehaviour
                 }
             }
 
-            //rg.velocity = new Vector2(h * moveSpeed, rg.velocity.y);
-
-            transform.Translate(Vector3.right * h * moveSpeed * Time.fixedDeltaTime);
+        //rg.velocity = new Vector2(h * moveSpeed, rg.velocity.y);
+        
+        transform.Translate(Vector3.right * h * moveSpeed * Time.fixedDeltaTime);
         
         }
     //跳跃逻辑设置
         void Jump()
         {
-            if (isGround)
+        if (isGround)
+        {
+            jumpCount = 2;
+            isJump = false;
+        }
+
+        if (jumpPressed && (isGround || (jumpCount > 0 && isJump)))
+        {
+            isJump = true;
+            rg.velocity = new Vector2(rg.velocity.x, jumpForce);
+            jumpCount--;
+
+            if (!isGround)
             {
-                jumpCount = 1;//设置跳跃的次数，可以多段跳
-                isJump = false;
-            }
-            if (jumpPressed && isGround)
-            {
-                isJump = true;
-                rg.velocity = new Vector2(rg.velocity.x, jumpForce);
-                jumpCount--;
-                jumpPressed = false;
-            }
-            else if (jumpPressed && jumpCount > 0 && isJump)
-            {
-                rg.velocity = new Vector2(rg.velocity.x, jumpForce);
-                jumpCount--;
-                jumpPressed = false;
+                anim.SetBool("jump", true);
             }
 
+            jumpPressed = false;
         }
+
+    }
     //跳跃动画的切换
         void switchJump()
         {
