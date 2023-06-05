@@ -15,6 +15,8 @@ public class AttackControl : MonoBehaviour
     public int skillDamageAmount = -10; // 设置skill伤害值
     private int currentDamageAmount; // 当前伤害值
 
+    GameObject cdEmpty;//cd ui控制空物体
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,8 @@ public class AttackControl : MonoBehaviour
         nomal.SetActive(false);
         attack.SetActive(false);
         nowcd = 0;
+
+        cdEmpty = GameObject.Find("cdEmpty");
     }
 
     // Update is called once per frame
@@ -40,6 +44,8 @@ public class AttackControl : MonoBehaviour
             StartCoroutine(ActivateTrigger(attack, 0.5f)); // 激活attack GameObject的触发器1秒
                                                            //技能进入cd
             nowcd = skillcd;
+
+            cdEmpty.GetComponent<SkillController>().cdstart(nowcd);//开始cd
         }
         if (nowcd > 0)
         {
