@@ -31,6 +31,7 @@ public class MasterController : MonoBehaviour
             { 
                 animator.SetInteger("AnimState", 1);
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+
                 if (transform.position.x < target.position.x)
                 {
                     transform.eulerAngles = new Vector3(0, 0, 0);
@@ -39,6 +40,7 @@ public class MasterController : MonoBehaviour
                 {
                     transform.eulerAngles = new Vector3(0, -180, 0);
                 }
+
                 if (distance < radiusdistance)
                 {
                     int randomInt = Random.Range(1, 3);

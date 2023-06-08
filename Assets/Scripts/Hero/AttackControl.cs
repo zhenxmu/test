@@ -73,6 +73,7 @@ public class AttackControl : MonoBehaviour
             if (enemyHealth != null)
             {
                 enemyHealth.ChangeHealth(currentDamageAmount);
+
             }
         }
     }

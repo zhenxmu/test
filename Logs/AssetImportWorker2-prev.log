@@ -1,0 +1,1000 @@
+Using pre-set license
+Built from '2021.3/china_unity/release' branch; Version is '2021.3.23f1c1 (b82b1f861975) revision 12069663'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 16176 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+E:\Software\Unity\Editor\2021.3.23f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+E:/学习/游戏设计与设计思维/The Lost Tablets/test
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+64114
+Successfully changed project path to: E:/学习/游戏设计与设计思维/The Lost Tablets/test
+E:/学习/游戏设计与设计思维/The Lost Tablets/test
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [22332] Host "[IP] 10.32.62.137 [Port] 0 [Flags] 2 [Guid] 4135227569 [EditorId] 4135227569 [Version] 1048832 [Id] WindowsEditor(7,Yuloliss) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [22332] Host "[IP] 10.32.62.137 [Port] 0 [Flags] 2 [Guid] 4135227569 [EditorId] 4135227569 [Version] 1048832 [Id] WindowsEditor(7,Yuloliss) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+AS: AutoStreaming module initializing.
+Refreshing native plugins compatible for Editor in 53.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.23f1c1 (b82b1f861975)
+[Subsystems] Discovering subsystems at path E:/Software/Unity/Editor/2021.3.23f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/学习/游戏设计与设计思维/The Lost Tablets/test/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+    Vendor:   NVIDIA
+    VRAM:     6023 MB
+    Driver:   31.0.15.1700
+Initialize mono
+Mono path[0] = 'E:/Software/Unity/Editor/2021.3.23f1c1/Editor/Data/Managed'
+Mono path[1] = 'E:/Software/Unity/Editor/2021.3.23f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Software/Unity/Editor/2021.3.23f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Software/Unity/Editor/2021.3.23f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004782 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 48.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.439 seconds
+Domain Reload Profiling:
+	ReloadAssembly (440ms)
+		BeginReloadAssembly (68ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (292ms)
+			LoadAssemblies (63ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (67ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (168ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (49ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (80ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006310 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.666 seconds
+Domain Reload Profiling:
+	ReloadAssembly (667ms)
+		BeginReloadAssembly (92ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (489ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (136ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (234ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (154ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2998 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (56.5 KB). Loaded Objects now: 3478.
+Memory consumption went from 122.3 MB to 122.2 MB.
+Total: 2.134700 ms (FindLiveObjects: 0.159800 ms CreateObjectMapping: 0.062800 ms MarkObjects: 1.849100 ms  DeleteObjects: 0.062300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1285537.655465 seconds.
+  path: Assets/Epic Toon FX/Prefabs 2D/Blood/Green/GreenBloodDripping2D.prefab
+  artifactKey: Guid(acb0d31becb6bb044b26b81accdf03ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Epic Toon FX/Prefabs 2D/Blood/Green/GreenBloodDripping2D.prefab using Guid(acb0d31becb6bb044b26b81accdf03ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae948e4ad6a2aca267f3fce2a2024e7') in 0.147681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.389847 seconds.
+  path: Assets/Epic Toon FX/Prefabs 2D/Blood/Green/GreenBloodShowerLoop2D.prefab
+  artifactKey: Guid(3717f8c88ddc95c429e75c8101f0a9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Epic Toon FX/Prefabs 2D/Blood/Green/GreenBloodShowerLoop2D.prefab using Guid(3717f8c88ddc95c429e75c8101f0a9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dc839551f3d2ca29bce97daec741f35') in 0.011676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.823386 seconds.
+  path: Assets/Epic Toon FX/Prefabs 2D/Blood/Green/GreenBloodSplatDirectional2D.prefab
+  artifactKey: Guid(5384d3f8b0176d243993a8f09a3978bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Epic Toon FX/Prefabs 2D/Blood/Green/GreenBloodSplatDirectional2D.prefab using Guid(5384d3f8b0176d243993a8f09a3978bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012ed4f430e384925394cba598aa6428') in 0.007828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.994695 seconds.
+  path: Assets/Epic Toon FX/Prefabs 2D/Blood/Red/BloodDripping2D.prefab
+  artifactKey: Guid(70b26805973318349bb2c60f8b37c8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Epic Toon FX/Prefabs 2D/Blood/Red/BloodDripping2D.prefab using Guid(70b26805973318349bb2c60f8b37c8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a07209078668dd0c96c67d9afd1615a0') in 0.010516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.564034 seconds.
+  path: Assets/Epic Toon FX/Prefabs 2D/Blood/Yellow/YellowBloodDripping2D.prefab
+  artifactKey: Guid(fd5e9e4e7ff2fbe4490ead1f235e2a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Epic Toon FX/Prefabs 2D/Blood/Yellow/YellowBloodDripping2D.prefab using Guid(fd5e9e4e7ff2fbe4490ead1f235e2a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b11b105cbe8aa8326aa898cc95ce9e82') in 0.010280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Epic Toon FX/Prefabs 2D/Blood/Yellow/YellowBloodSplatDirectional2D.prefab
+  artifactKey: Guid(1db5b810a6652c74784c28cfaba8cab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Epic Toon FX/Prefabs 2D/Blood/Yellow/YellowBloodSplatDirectional2D.prefab using Guid(1db5b810a6652c74784c28cfaba8cab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3e4332dc68954cf4d866bf97c920fac') in 0.007340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.630010 seconds.
+  path: Assets/Epic Toon FX/Prefabs 2D/Blood/Red/BloodDripping2D.prefab
+  artifactKey: Guid(70b26805973318349bb2c60f8b37c8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Epic Toon FX/Prefabs 2D/Blood/Red/BloodDripping2D.prefab using Guid(70b26805973318349bb2c60f8b37c8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a115ad5c7dabbe5fc3c79bf4f319e4') in 0.007738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.449542 seconds.
+  path: Assets/Epic Toon FX/Prefabs 2D/Blood/Red/BloodExplosion2D.prefab
+  artifactKey: Guid(617378de28fbaa64c96485d5b0d9169b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Epic Toon FX/Prefabs 2D/Blood/Red/BloodExplosion2D.prefab using Guid(617378de28fbaa64c96485d5b0d9169b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbf75ac3922a7d0065bbfed315e1b729') in 0.013462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.397977 seconds.
+  path: Assets/Epic Toon FX/Prefabs 2D/Blood/Red/BloodShowerLoop2D.prefab
+  artifactKey: Guid(83c18340a7ab40841ab1bd9102120990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Epic Toon FX/Prefabs 2D/Blood/Red/BloodShowerLoop2D.prefab using Guid(83c18340a7ab40841ab1bd9102120990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba5a7a1df6e9b220ee82c7bfba44eb0') in 0.011740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.336494 seconds.
+  path: Assets/Epic Toon FX/Prefabs 2D/Blood/Red/BloodSplatCritical2D.prefab
+  artifactKey: Guid(0ebcd60dd020022408e53f535d12f313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Epic Toon FX/Prefabs 2D/Blood/Red/BloodSplatCritical2D.prefab using Guid(0ebcd60dd020022408e53f535d12f313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7241327feef370d22bfc7ed2fce3595') in 0.009904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.318555 seconds.
+  path: Assets/Epic Toon FX/Prefabs 2D/Blood/Red/BloodSplatDirectional2D.prefab
+  artifactKey: Guid(9fc1afc1190c21b459bff8bed1d9ec02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Epic Toon FX/Prefabs 2D/Blood/Red/BloodSplatDirectional2D.prefab using Guid(9fc1afc1190c21b459bff8bed1d9ec02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaeae6efd6369a1a712792138753cafa') in 0.007577 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007990 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.786 seconds
+Domain Reload Profiling:
+	ReloadAssembly (787ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (569ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (166ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (250ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (157ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (24.7 KB). Loaded Objects now: 3490.
+Memory consumption went from 124.8 MB to 124.8 MB.
+Total: 1.955800 ms (FindLiveObjects: 0.160700 ms CreateObjectMapping: 0.067200 ms MarkObjects: 1.710600 ms  DeleteObjects: 0.016400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009368 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.778 seconds
+Domain Reload Profiling:
+	ReloadAssembly (778ms)
+		BeginReloadAssembly (115ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (582ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (162ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (277ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (172ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (24.6 KB). Loaded Objects now: 3493.
+Memory consumption went from 124.8 MB to 124.8 MB.
+Total: 1.935900 ms (FindLiveObjects: 0.155300 ms CreateObjectMapping: 0.068900 ms MarkObjects: 1.696500 ms  DeleteObjects: 0.014200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008459 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.732 seconds
+Domain Reload Profiling:
+	ReloadAssembly (733ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (529ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (147ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (250ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (164ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (24.6 KB). Loaded Objects now: 3496.
+Memory consumption went from 124.8 MB to 124.8 MB.
+Total: 2.272900 ms (FindLiveObjects: 0.174900 ms CreateObjectMapping: 0.169200 ms MarkObjects: 1.914100 ms  DeleteObjects: 0.013800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 206.936741 seconds.
+  path: Assets/Scripts/Hero
+  artifactKey: Guid(5b18b332da2f6f244bf439e4ad671a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Hero using Guid(5b18b332da2f6f244bf439e4ad671a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e78c787241477242c8529689d0b113f') in 0.007639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.005390 seconds.
+  path: Assets/PicSource/幽灵马
+  artifactKey: Guid(258bac8f57a9bff4b9685d93cb468216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/幽灵马 using Guid(258bac8f57a9bff4b9685d93cb468216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ce0ccc5ef577c0bcbbef9c3c87c6fd') in 0.001779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.862007 seconds.
+  path: Assets/PicSource/幽灵马/GhostHorse.prefab
+  artifactKey: Guid(9fe0652f7636baf43a3ea159cff4ca1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/幽灵马/GhostHorse.prefab using Guid(9fe0652f7636baf43a3ea159cff4ca1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c87ff8f1e878160a5139a092cdfe81b3') in 0.053505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.229165 seconds.
+  path: Assets/PicSource/暗黑剑士
+  artifactKey: Guid(a33b5a6b6a1d71340bb8f0dc687ddce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/暗黑剑士 using Guid(a33b5a6b6a1d71340bb8f0dc687ddce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f051c845b30d9285a3f6bd1e5bcfb32') in 0.002162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.101843 seconds.
+  path: Assets/PicSource/暗黑剑士/NightBorne.prefab
+  artifactKey: Guid(c9ea4f55e582cd047a4a6985c8ffedf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/暗黑剑士/NightBorne.prefab using Guid(c9ea4f55e582cd047a4a6985c8ffedf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dab6a662d75ec8063d9dff597d924053') in 0.039685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.652724 seconds.
+  path: Assets/PicSource/火球恶魔
+  artifactKey: Guid(ec2752c9ae85cc44cb6d385e1a684ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/火球恶魔 using Guid(ec2752c9ae85cc44cb6d385e1a684ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19fa458de9a67b432c28ca721faeee3d') in 0.002211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.048044 seconds.
+  path: Assets/PicSource/紫色法师
+  artifactKey: Guid(c80e3b174034aa54a8fe740c857ba7ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/紫色法师 using Guid(c80e3b174034aa54a8fe740c857ba7ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398a0402722758507e1586406b28d404') in 0.001733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.909749 seconds.
+  path: Assets/PicSource/蓝魔法师
+  artifactKey: Guid(804dda45e0f082f4a8deef3ab7e78bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/蓝魔法师 using Guid(804dda45e0f082f4a8deef3ab7e78bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd804fa7ee81264d36338b1d373cf21b7') in 0.002285 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006824 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.716 seconds
+Domain Reload Profiling:
+	ReloadAssembly (716ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (522ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (146ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (241ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (157ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (24.7 KB). Loaded Objects now: 3499.
+Memory consumption went from 124.9 MB to 124.8 MB.
+Total: 1.921000 ms (FindLiveObjects: 0.155800 ms CreateObjectMapping: 0.066900 ms MarkObjects: 1.682700 ms  DeleteObjects: 0.014500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 48.903836 seconds.
+  path: Assets/PicSource/暗黑剑士/NightBorne.prefab
+  artifactKey: Guid(c9ea4f55e582cd047a4a6985c8ffedf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/暗黑剑士/NightBorne.prefab using Guid(c9ea4f55e582cd047a4a6985c8ffedf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20004617614d8d92683cacdf1b7c64d0') in 0.089665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.689765 seconds.
+  path: Assets/PicSource/暗黑剑士/NightBorne.prefab
+  artifactKey: Guid(c9ea4f55e582cd047a4a6985c8ffedf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/暗黑剑士/NightBorne.prefab using Guid(c9ea4f55e582cd047a4a6985c8ffedf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66672ae777fab35a6b011e8b37fbe054') in 0.047960 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006936 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.678 seconds
+Domain Reload Profiling:
+	ReloadAssembly (678ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (482ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (138ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (215ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (132ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (24.7 KB). Loaded Objects now: 3502.
+Memory consumption went from 124.9 MB to 124.9 MB.
+Total: 2.124400 ms (FindLiveObjects: 0.172800 ms CreateObjectMapping: 0.072300 ms MarkObjects: 1.863800 ms  DeleteObjects: 0.014700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006984 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.681 seconds
+Domain Reload Profiling:
+	ReloadAssembly (681ms)
+		BeginReloadAssembly (115ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (486ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (139ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (216ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (135ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (24.6 KB). Loaded Objects now: 3505.
+Memory consumption went from 124.9 MB to 124.9 MB.
+Total: 1.919500 ms (FindLiveObjects: 0.157800 ms CreateObjectMapping: 0.070100 ms MarkObjects: 1.675200 ms  DeleteObjects: 0.015200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011596 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.752 seconds
+Domain Reload Profiling:
+	ReloadAssembly (752ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (558ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (158ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (255ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (160ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (24.6 KB). Loaded Objects now: 3508.
+Memory consumption went from 124.9 MB to 124.9 MB.
+Total: 2.109100 ms (FindLiveObjects: 0.157100 ms CreateObjectMapping: 0.068500 ms MarkObjects: 1.867400 ms  DeleteObjects: 0.015200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007812 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.762 seconds
+Domain Reload Profiling:
+	ReloadAssembly (763ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (562ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (165ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (250ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (155ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (24.7 KB). Loaded Objects now: 3511.
+Memory consumption went from 124.9 MB to 124.9 MB.
+Total: 1.959000 ms (FindLiveObjects: 0.157700 ms CreateObjectMapping: 0.068900 ms MarkObjects: 1.717000 ms  DeleteObjects: 0.014400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015577 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.412 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1412ms)
+		BeginReloadAssembly (245ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (982ms)
+			LoadAssemblies (189ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (310ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (425ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (183ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (24.7 KB). Loaded Objects now: 3514.
+Memory consumption went from 124.9 MB to 124.9 MB.
+Total: 2.137200 ms (FindLiveObjects: 0.159000 ms CreateObjectMapping: 0.076900 ms MarkObjects: 1.885800 ms  DeleteObjects: 0.014900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006278 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.701 seconds
+Domain Reload Profiling:
+	ReloadAssembly (701ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (494ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (141ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (221ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (135ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (24.7 KB). Loaded Objects now: 3517.
+Memory consumption went from 124.9 MB to 124.9 MB.
+Total: 2.060000 ms (FindLiveObjects: 0.166500 ms CreateObjectMapping: 0.067200 ms MarkObjects: 1.811800 ms  DeleteObjects: 0.013600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 325.107115 seconds.
+  path: Assets/PicSource/蓝魔法师/idle/Idle1.png
+  artifactKey: Guid(fd1c75d73cbf61348b6b4de92d2248ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/蓝魔法师/idle/Idle1.png using Guid(fd1c75d73cbf61348b6b4de92d2248ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '936d979a2296f2df626d725ae679218a') in 0.054705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/PicSource/蓝魔法师/Jump/Jump2.png
+  artifactKey: Guid(00c4c91f03654d548a8e62c6cca168c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/蓝魔法师/Jump/Jump2.png using Guid(00c4c91f03654d548a8e62c6cca168c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a99b83cfada980529903f87e9309bbe4') in 0.007568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PicSource/蓝魔法师/idle/Idle3.png
+  artifactKey: Guid(e6de7d0f71572c3418ad0a04412c80e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/蓝魔法师/idle/Idle3.png using Guid(e6de7d0f71572c3418ad0a04412c80e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e32bb051fe54860e50562a13f71956bd') in 0.007286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PicSource/蓝魔法师/idle/Idle6.png
+  artifactKey: Guid(4d72b0cc7410f0b4888d0c67b564260e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/蓝魔法师/idle/Idle6.png using Guid(4d72b0cc7410f0b4888d0c67b564260e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '799a7d9916b9a64be9cfd495994ae142') in 0.007964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.056104 seconds.
+  path: Assets/PicSource/蓝魔法师/Fall/Fall2.png
+  artifactKey: Guid(525b751c5e443a74daf38aa42a0d3335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/蓝魔法师/Fall/Fall2.png using Guid(525b751c5e443a74daf38aa42a0d3335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05cac1fce81e7262e8093b6a77fe9a2d') in 0.006589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.029912 seconds.
+  path: Assets/PicSource/蓝魔法师/Fall/Fall1.png
+  artifactKey: Guid(b26f3236ee9448245a9b76941765845d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/蓝魔法师/Fall/Fall1.png using Guid(b26f3236ee9448245a9b76941765845d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68257d06d6a68bdb37cf7716ed48629e') in 0.007234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.537344 seconds.
+  path: Assets/PicSource/蓝魔法师/Move/Run2.png
+  artifactKey: Guid(88c340da976fc8449a76472fd0243d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/蓝魔法师/Move/Run2.png using Guid(88c340da976fc8449a76472fd0243d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2de8fdbd93b2ef34bfa45cf80bcde929') in 0.012929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.028315 seconds.
+  path: Assets/PicSource/蓝魔法师/Move/Run3.png
+  artifactKey: Guid(8e15f2b289dd4c248bb4ea92b4fc17d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/蓝魔法师/Move/Run3.png using Guid(8e15f2b289dd4c248bb4ea92b4fc17d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ba28644c9fca5ea062e2ff4229052f3') in 0.007944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.074174 seconds.
+  path: Assets/PicSource/蓝魔法师/Move/Run4.png
+  artifactKey: Guid(01353c8d6955152469f4bc9b7a043395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/蓝魔法师/Move/Run4.png using Guid(01353c8d6955152469f4bc9b7a043395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b456713b51fb0387fc700fbde78639') in 0.008276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.069807 seconds.
+  path: Assets/PicSource/蓝魔法师/Move/Run5.png
+  artifactKey: Guid(7cb2b376b3aa2f44bbc6cd1796909b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/蓝魔法师/Move/Run5.png using Guid(7cb2b376b3aa2f44bbc6cd1796909b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6076646a8aa7c02202022e01a14a794d') in 0.006820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.070509 seconds.
+  path: Assets/PicSource/蓝魔法师/Move/Run6.png
+  artifactKey: Guid(9a877ff70d5e26f47a18ce0e4a896d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/蓝魔法师/Move/Run6.png using Guid(9a877ff70d5e26f47a18ce0e4a896d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bc27eb751276409d8ae61dc8aff68de') in 0.008888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.073664 seconds.
+  path: Assets/PicSource/蓝魔法师/Move/Run7.png
+  artifactKey: Guid(b11f56d9014b28c4e8674df3d4dfe32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/蓝魔法师/Move/Run7.png using Guid(b11f56d9014b28c4e8674df3d4dfe32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e585097928d5ffb947ce13831f263460') in 0.007119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.072914 seconds.
+  path: Assets/PicSource/蓝魔法师/Move/Run8.png
+  artifactKey: Guid(f6a569df5de6acf4888a0700b85d9b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PicSource/蓝魔法师/Move/Run8.png using Guid(f6a569df5de6acf4888a0700b85d9b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72845cb36c8b964b9bc7a446b3284e9') in 0.007422 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016956 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.223 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1224ms)
+		BeginReloadAssembly (213ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (865ms)
+			LoadAssemblies (169ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (237ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (393ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (242ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (26ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (24.7 KB). Loaded Objects now: 3524.
+Memory consumption went from 124.9 MB to 124.9 MB.
+Total: 2.698400 ms (FindLiveObjects: 0.274500 ms CreateObjectMapping: 0.081500 ms MarkObjects: 2.320900 ms  DeleteObjects: 0.020100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

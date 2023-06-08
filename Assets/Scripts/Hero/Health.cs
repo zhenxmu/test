@@ -23,12 +23,13 @@ public class Health : MonoBehaviour
     }
     public void ChangeHealth(int amount)//一个公开函数
     {
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
 
         }
-        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        
         Debug.Log(gameObject.tag+currentHealth + "/" + maxHealth);
 
     }

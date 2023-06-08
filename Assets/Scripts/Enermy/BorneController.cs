@@ -16,10 +16,11 @@ public class BorneController : MonoBehaviour
     public Transform target;//目标
     public float findistance = 6;//搜寻目标距离
     public float radiusdistance = 1;//攻击距离
-    public bool attack;
+    float y;
     // Start is called before the first frame update
     public void Start()
     {
+        y = transform.position.y;
         wait = waitTime;
         animator = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Hero").GetComponent<Transform>();
@@ -30,15 +31,26 @@ public class BorneController : MonoBehaviour
     {
         animator.SetBool("Run", true);
         //移动判断
-        attack = false;
         if (target)//是否找到攻击目标
         {
             float distance = (transform.position - target.position).sqrMagnitude;
             if (distance < findistance)//如果攻击目标在攻击范围外，向目标移动
             {
-                animator.SetBool("Attack", attack);
-                animator.SetBool("Run", true);
-                transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+                //animator.SetBool("Attack", attack);
+                //if(!animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Equals("Attack")) animator.SetBool("Run", true);
+                if (!animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Equals("Attack"))
+                {
+                    if (distance > radiusdistance)
+                    {
+                        animator.SetBool("Run", true);
+                        transform.position = Vector2.MoveTowards(transform.position, new Vector2(target.position.x, y), speed * Time.deltaTime);
+                    }
+                    else
+                    {
+                        animator.SetTrigger("attack");
+                        animator.SetBool("Run", false);
+                    }
+                }
                 if (transform.position.x < target.position.x)
                 {
                     transform.eulerAngles = new Vector3(0, 0, 0);
@@ -46,13 +58,6 @@ public class BorneController : MonoBehaviour
                 else
                 {
                     transform.eulerAngles = new Vector3(0, -180, 0);
-                }
-                if (distance < radiusdistance)
-                {
-                    attack = true;
-                    animator.SetBool("Attack", attack);
-                    animator.SetBool("Run", false);
-                  
                 }
             }
             else//左右移动

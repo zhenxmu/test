@@ -45,7 +45,7 @@ public class MoveControler : MonoBehaviour
         void Start()
         {
             rg = GetComponent<Rigidbody2D>();
-            coll = GetComponent<Collider2D>();
+            coll = GetComponent<CapsuleCollider2D>();
             anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
             //lift.SetActive(false);
@@ -166,7 +166,7 @@ public class MoveControler : MonoBehaviour
             isJump = true;
             rg.velocity = new Vector2(rg.velocity.x, jumpForce);
             jumpCount--;
-
+            Debug.Log(jumpCount);   
             if (!isGround)
             {
                 anim.SetBool("jump", true);

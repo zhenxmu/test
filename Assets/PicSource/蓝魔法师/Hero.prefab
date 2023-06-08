@@ -218,6 +218,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!70 &1773441449204276501
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -272,7 +273,7 @@ MonoBehaviour:
   groundcheck: {fileID: 0}
   ground:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 64
   isGround: 0
   isJump: 0
   jumpPressed: 0

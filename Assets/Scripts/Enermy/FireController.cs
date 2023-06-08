@@ -9,7 +9,7 @@ public class FireController : MonoBehaviour
     public float fireballSpeed = 5f; // 火球速度
     public float fireballInterval = 2f; // 发射火球的间隔时间
     private float lastFireballTime = 0f; // 上一次发射火球的时间
-    public int health;
+    public int health=20;
     public int damage;
     void Start()
     {
