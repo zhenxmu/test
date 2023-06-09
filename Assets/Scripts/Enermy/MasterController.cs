@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MasterController : MonoBehaviour
 {
@@ -14,9 +15,16 @@ public class MasterController : MonoBehaviour
     public float jumpSpeed;
     private Rigidbody2D myRigidbody;
     float y;
+
+    public Slider hp;
+    public GameObject hpcontainer;
+    bool ishp;
     // Start is called before the first frame update
     public void Start()
     {
+        hp.maxValue = GetComponent<Health>().maxHealth;
+        ishp = false;
+
         myRigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Hero").GetComponent<Transform>();
@@ -26,17 +34,18 @@ public class MasterController : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+        if(ishp)hp.value = GetComponent<Health>().health;
         if (target != null)
         {
             float distance = (transform.position - target.position).sqrMagnitude;
             if (distance < findistance)
             { 
                 //animator.SetInteger("AnimState", 1);
-                
+                hpcontainer.SetActive(true);
+                ishp = true;
                 //如果当前状态不是攻击
                 if(!(animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Equals("Warlock_Spellcast") || animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Equals("Warlock_Attack")))
                 {
-                    
                     //左右转向
                     if (transform.position.x < target.position.x)
                     {
