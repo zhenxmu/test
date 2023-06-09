@@ -57,16 +57,16 @@ public class MoveControler : MonoBehaviour
         {
             // Debug.Log(rg.velocity.y);
 
-            if (Input.GetKeyDown(KeyCode.Space) && jumpCount > 0)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 Debug.Log("°´ÏÂÁËÌøÔ¾¼ü");
-                jumpPressed = true;
+                Jump();
             }
-            if (Input.GetKeyUp(KeyCode.Space) && jumpCount > 0)
+            /*if (Input.GetKeyUp(KeyCode.Space) && jumpCount > 0)
             {
                 Debug.Log("ËÉ¿ªÌøÔ¾¼ü");
                 jumpPressed = false;
-            }
+            }*/
 
         if (isInvincible)
         {
@@ -97,12 +97,8 @@ public class MoveControler : MonoBehaviour
 
         private void FixedUpdate()
         {
-
         isGround = coll.IsTouchingLayers(ground);
         groundMovement();
-        Jump();
-        switchJump();
-
     }
     //×óÓÒÒÆ¶¯Âß¼­
         void groundMovement()
@@ -155,16 +151,18 @@ public class MoveControler : MonoBehaviour
     //ÌøÔ¾Âß¼­ÉèÖÃ
         void Jump()
         {
+
         if (isGround)
         {
             jumpCount = 2;
             isJump = false;
         }
 
-        if (jumpPressed && (isGround || (jumpCount > 0 && isJump)))
+        if (jumpCount>0)
         {
             isJump = true;
             rg.velocity = new Vector2(rg.velocity.x, jumpForce);
+            Debug.Log(isGround);
             jumpCount--;
             Debug.Log(jumpCount);   
             if (!isGround)
@@ -174,7 +172,7 @@ public class MoveControler : MonoBehaviour
 
             jumpPressed = false;
         }
-
+        switchJump();
     }
     //ÌøÔ¾¶¯»­µÄÇÐ»»
         void switchJump()

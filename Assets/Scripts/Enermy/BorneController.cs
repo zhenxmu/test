@@ -15,7 +15,7 @@ public class BorneController : MonoBehaviour
     public int damage;
     public Transform target;//Ä¿±ê
     public float findistance = 6;//ËÑÑ°Ä¿±ê¾àÀë
-    public float radiusdistance = 1;//¹¥»÷¾àÀë
+    public float radiusdistance = 5;//¹¥»÷¾àÀë
     float y;
     // Start is called before the first frame update
     public void Start()
@@ -40,6 +40,14 @@ public class BorneController : MonoBehaviour
                 //if(!animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Equals("Attack")) animator.SetBool("Run", true);
                 if (!animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Equals("Attack"))
                 {
+                    if (transform.position.x < target.position.x)
+                    {
+                        transform.eulerAngles = new Vector3(0, 0, 0);
+                    }
+                    else
+                    {
+                        transform.eulerAngles = new Vector3(0, -180, 0);
+                    }
                     if (distance > radiusdistance)
                     {
                         animator.SetBool("Run", true);
@@ -51,14 +59,7 @@ public class BorneController : MonoBehaviour
                         animator.SetBool("Run", false);
                     }
                 }
-                if (transform.position.x < target.position.x)
-                {
-                    transform.eulerAngles = new Vector3(0, 0, 0);
-                }
-                else
-                {
-                    transform.eulerAngles = new Vector3(0, -180, 0);
-                }
+                
             }
             else//×óÓÒÒÆ¶¯
             {
@@ -96,7 +97,7 @@ public class BorneController : MonoBehaviour
             }
 
         }
-      
+        transform.position = new Vector3(transform.position.x,y,transform.position.z);
     }
     //ÊÜÉËº¦ÅÐ¶Ï
     public void TakeDamage(int damage)

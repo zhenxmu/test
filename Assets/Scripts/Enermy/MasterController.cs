@@ -13,12 +13,14 @@ public class MasterController : MonoBehaviour
     public float radiusdistance = 5f;//攻击距离
     public float jumpSpeed;
     private Rigidbody2D myRigidbody;
+    float y;
     // Start is called before the first frame update
     public void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Hero").GetComponent<Transform>();
+        y = transform.position.y;
     }
 
     // Update is called once per frame
@@ -29,34 +31,43 @@ public class MasterController : MonoBehaviour
             float distance = (transform.position - target.position).sqrMagnitude;
             if (distance < findistance)
             { 
-                animator.SetInteger("AnimState", 1);
-                transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-
-                if (transform.position.x < target.position.x)
+                //animator.SetInteger("AnimState", 1);
+                
+                //如果当前状态不是攻击
+                if(!(animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Equals("Warlock_Spellcast") || animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Equals("Warlock_Attack")))
                 {
-                    transform.eulerAngles = new Vector3(0, 0, 0);
-                }
-                else
-                {
-                    transform.eulerAngles = new Vector3(0, -180, 0);
-                }
-
-                if (distance < radiusdistance)
-                {
-                    int randomInt = Random.Range(1, 3);
-                    if (randomInt == 1)
+                    
+                    //左右转向
+                    if (transform.position.x < target.position.x)
                     {
-                        animator.SetBool("Attack 0", true);
-                        animator.SetBool("Spellcast 0", false);
+                        transform.eulerAngles = new Vector3(0, 0, 0);
                     }
-                    else if (randomInt == 2)
+                    else
                     {
-                        animator.SetBool("Attack 0", false);
-                        animator.SetBool("Spellcast 0", true);
+                        transform.eulerAngles = new Vector3(0, -180, 0);
                     }
-
-
+                    //如果到攻击范围内
+                    if (distance < radiusdistance)
+                    {
+                        animator.SetInteger("AnimState", 0);
+                        int randomInt = Random.Range(1, 4);
+                        if (randomInt >1)
+                        {
+                            animator.SetTrigger("Attack");
+                        }
+                        else if (randomInt == 1)
+                        {
+                            animator.SetTrigger("Spellcast");
+                        }
+                    }
+                    else//否则移动
+                    {
+                        animator.SetInteger("AnimState", 1);
+                        transform.position = Vector2.MoveTowards(transform.position, new Vector2(target.position.x,y), speed * Time.deltaTime);
+                    }
+                    
                 }
+                
             }
           
 
