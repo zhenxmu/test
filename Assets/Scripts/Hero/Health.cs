@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour
@@ -26,6 +28,14 @@ public class Health : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         if (currentHealth <= 0)
         {
+            if (gameObject.tag.Equals("Hero"))
+            {
+                SceneManager.LoadScene("StartScene");
+            }
+            if (gameObject.name.Equals("Warlock"))
+            {
+                SceneManager.LoadScene("OldTown");
+            }
             Destroy(gameObject);
 
         }

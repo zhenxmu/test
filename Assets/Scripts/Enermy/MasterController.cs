@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class MasterController : MonoBehaviour
 {
@@ -16,36 +15,31 @@ public class MasterController : MonoBehaviour
     private Rigidbody2D myRigidbody;
     float y;
 
-    public Slider hp;
-    public GameObject hpcontainer;
-    bool ishp;
+    public GameObject nomal;
+    public GameObject attack;
+   
     // Start is called before the first frame update
     public void Start()
     {
-        hp.maxValue = GetComponent<Health>().maxHealth;
-        ishp = false;
-
         myRigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Hero").GetComponent<Transform>();
         y = transform.position.y;
     }
-
     // Update is called once per frame
     public void Update()
     {
-        if(ishp)hp.value = GetComponent<Health>().health;
         if (target != null)
         {
             float distance = (transform.position - target.position).sqrMagnitude;
             if (distance < findistance)
             { 
                 //animator.SetInteger("AnimState", 1);
-                hpcontainer.SetActive(true);
-                ishp = true;
+                
                 //如果当前状态不是攻击
                 if(!(animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Equals("Warlock_Spellcast") || animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Equals("Warlock_Attack")))
                 {
+                    
                     //左右转向
                     if (transform.position.x < target.position.x)
                     {
@@ -59,14 +53,17 @@ public class MasterController : MonoBehaviour
                     if (distance < radiusdistance)
                     {
                         animator.SetInteger("AnimState", 0);
-                        int randomInt = Random.Range(1, 4);
+                        int randomInt = Random.Range(1, 3);
+                        
                         if (randomInt >1)
                         {
                             animator.SetTrigger("Attack");
+                            StartCoroutine(ActivateTrigger(nomal, 0.7f));
                         }
-                        else if (randomInt == 1)
+                        else if (randomInt == 1&& distance < 3.5f)
                         {
                             animator.SetTrigger("Spellcast");
+                            StartCoroutine(ActivateTrigger(attack, 0.7f));
                         }
                     }
                     else//否则移动
@@ -76,11 +73,25 @@ public class MasterController : MonoBehaviour
                     }
                     
                 }
-                
             }
           
-
         }
+    }
+    private IEnumerator ActivateTrigger(GameObject triggerObject, float duration)
+    {
+
+        yield return new WaitForSeconds(duration);
+
+        triggerObject.SetActive(true);
+        StartCoroutine(CloseTrigger(triggerObject));
+        //triggerObject.SetActive(false);
+    }
+    private IEnumerator CloseTrigger(GameObject triggerObject)
+    {
+
+        yield return new WaitForSeconds(0.3f);
+
+        triggerObject.SetActive(false);
     }
     //受伤害判断
     public void TakeDamage(int damage)
@@ -94,7 +105,6 @@ public class MasterController : MonoBehaviour
             animator.SetBool("Death", true);
             Destroy(gameObject);
         }
-
     }
 }
 

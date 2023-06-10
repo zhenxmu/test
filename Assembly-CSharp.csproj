@@ -68,9 +68,11 @@
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Blademaster.cs" />
     <Compile Include="Assets\Scripts\Enermy\MasterController.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Firemage.cs" />
+    <Compile Include="Assets\Scripts\Enermy\Enermy_Attack_Check.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Effects_DestroyEvent.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Effects_Projectile.cs" />
     <Compile Include="Assets\Scripts\UI\SkillController.cs" />
+    <Compile Include="Assets\Scripts\Hero\AttackCheck.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\CharacterSelector_PixelHeroes.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Alchemist.cs" />
     <Compile Include="Assets\Scripts\Hero\MoveControler.cs" />
