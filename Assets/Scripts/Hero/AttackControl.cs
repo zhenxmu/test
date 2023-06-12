@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//**********
+//工程
+//**********
 public class AttackControl : MonoBehaviour
 {
     public static Animator anim;
@@ -12,8 +14,12 @@ public class AttackControl : MonoBehaviour
   
     public float forceAmount = 1f; // 设置施加力的大小,击退效果
     
-
     GameObject cdEmpty;//cd ui控制空物体
+
+    private double waitsecond;
+
+    //特效升级
+    public static int level = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -31,12 +37,15 @@ public class AttackControl : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.J))
         {
+            waitsecond = 0.25;
             anim.SetTrigger("NomalAttack");
-            StartCoroutine(ActivateTrigger(nomal, 0.2f)); // 激活nomal GameObject的触发器1秒
+            StartCoroutine(ActivateTrigger(nomal, 0.5f)); // 激活nomal GameObject的触发器0.5秒
+            StartCoroutine(ActivateAttack(0.25f));
         }
         if (Input.GetKeyUp(KeyCode.K) && nowcd <= 0)
         {
             anim.SetTrigger("SkillAttack");
+            waitsecond = 1;
             StartCoroutine(ActivateTrigger(attack, 0.5f)); // 激活attack GameObject的触发器1秒
                                                            //技能进入cd
             nowcd = skillcd;
@@ -53,10 +62,25 @@ public class AttackControl : MonoBehaviour
     {
 
     }
-
+    //****************************************************************
     // 检测触发器碰撞
+    //****************************************************************
+    private IEnumerator ActivateAttack(float duration)//激活特效
+    {
+        yield return new WaitForSeconds(duration);
+        for (int i = 0; i < level; i++)
+        {
+            Vector3 offset = new Vector3(i * 0.1f, i * 0.1f, 0); // adjust the offset as needed
+            GameObject bloodSplat = Instantiate(Resources.Load("SwordHitBlueLegacy") as GameObject, nomal.transform.position + offset, Quaternion.identity);
+            yield return new WaitForSeconds(0.1f);
+            Destroy(bloodSplat);
+        }
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.clip = Resources.Load<AudioClip>("etfx_explosion_lightning");
+        audioSource.Play();
 
 
+    }
     // 激活触发器并在指定时间后关闭
     private IEnumerator ActivateTrigger(GameObject triggerObject, float duration)
     {

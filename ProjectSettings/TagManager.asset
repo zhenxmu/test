@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enermy
   - Hero
+  - green
   layers:
   - Default
   - TransparentFX

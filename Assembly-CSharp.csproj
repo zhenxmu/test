@@ -56,24 +56,36 @@
     <Analyzer Include="E:\Software\Visual Studio\IDE\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Source\Epic Toon FX\Scripts\ETFXPitchRandomizer.cs" />
+    <Compile Include="Assets\Source\Epic Toon FX\Demo\Scripts\ETFXFireProjectile.cs" />
     <Compile Include="Assets\Scripts\Hero\Health.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Sensor_PixelHeroes.cs" />
+    <Compile Include="Assets\Source\Epic Toon FX\Scripts\ETFXLightFade.cs" />
+    <Compile Include="Assets\Source\Epic Toon FX\Demo\Scripts\ETFXButtonScript.cs" />
+    <Compile Include="Assets\Source\Epic Toon FX\Demo\Scripts\VFX Library\ParticleEffectsLibrary.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\ColorSwap\ColorSwap_PixelHeroes.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\StormMage.cs" />
+    <Compile Include="Assets\Source\Epic Toon FX\Demo\Scripts\ETFXMouseOrbit.cs" />
     <Compile Include="Assets\Scripts\Enermy\BorneController.cs" />
     <Compile Include="Assets\Scripts\Enermy\HorseController.cs" />
     <Compile Include="Assets\Scripts\UI\StartScene.cs" />
+    <Compile Include="Assets\Source\Epic Toon FX\Demo\Scripts\ETFXTarget.cs" />
+    <Compile Include="Assets\Source\Epic Toon FX\Scripts\ETFXRotation.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Necromancer.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Priest.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Blademaster.cs" />
+    <Compile Include="Assets\Source\Epic Toon FX\Demo\Scripts\ETFXSceneManager.cs" />
     <Compile Include="Assets\Scripts\Enermy\MasterController.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Firemage.cs" />
+    <Compile Include="Assets\Source\Epic Toon FX\Demo\Scripts\VFX Library\PEButtonScript.cs" />
     <Compile Include="Assets\Scripts\Enermy\Enermy_Attack_Check.cs" />
+    <Compile Include="Assets\Source\Epic Toon FX\Demo\Scripts\ETFXLoopScript.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Effects_DestroyEvent.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Effects_Projectile.cs" />
     <Compile Include="Assets\Scripts\UI\SkillController.cs" />
     <Compile Include="Assets\Scripts\Hero\AttackCheck.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\CharacterSelector_PixelHeroes.cs" />
+    <Compile Include="Assets\Source\Epic Toon FX\Demo\Scripts\VFX Library\UICanvasManager.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Alchemist.cs" />
     <Compile Include="Assets\Scripts\Hero\MoveControler.cs" />
     <Compile Include="Assets\Scripts\UI\HMPController.cs" />
@@ -86,13 +98,16 @@
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Warlock.cs" />
     <Compile Include="Assets\Scripts\Enermy\fireball.cs" />
     <Compile Include="Assets\Scripts\Enermy\BallController.cs" />
+    <Compile Include="Assets\Source\Epic Toon FX\Demo\Scripts\ETFXProjectileScript.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Rogue.cs" />
     <Compile Include="Assets\Scripts\Hero\AttckItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\Source\Epic Toon FX\Prefabs\Environment\Environment FX.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Source\场景-荒废森林\Social\Autor_note.txt" />
+    <None Include="Assets\Source\Epic Toon FX\Prefabs\Combat\Combat FX.txt" />
     <None Include="Assets\Source\城镇 NPC 场景\Music\readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
@@ -101,6 +116,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Source\Pixel Heroes Pack\ColorSwap\Sprites-ColorSwap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Source\Epic Toon FX\Prefabs\Interactive\Interactive FX.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
@@ -116,6 +132,7 @@
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Fonts\7000汉字 符号 英文字符集.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Fonts\3500汉字+符号+英文字符集.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>

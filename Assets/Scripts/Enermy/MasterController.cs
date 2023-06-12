@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MasterController : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class MasterController : MonoBehaviour
 
     public GameObject nomal;
     public GameObject attack;
+    public GameObject hp;
+    public Slider hp_slider;
    
     // Start is called before the first frame update
     public void Start()
@@ -29,12 +32,18 @@ public class MasterController : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+        if (hp.activeSelf)
+        {
+            hp_slider.maxValue = gameObject.GetComponent<Health>().maxHealth;
+            hp_slider.value= gameObject.GetComponent<Health>().health;
+        }
         if (target != null)
         {
             float distance = (transform.position - target.position).sqrMagnitude;
             if (distance < findistance)
-            { 
+            {
                 //animator.SetInteger("AnimState", 1);
+                hp.SetActive(true);
                 
                 //如果当前状态不是攻击
                 if(!(animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Equals("Warlock_Spellcast") || animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Equals("Warlock_Attack")))
