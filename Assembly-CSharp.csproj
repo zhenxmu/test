@@ -62,6 +62,7 @@
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Sensor_PixelHeroes.cs" />
     <Compile Include="Assets\Source\Epic Toon FX\Scripts\ETFXLightFade.cs" />
     <Compile Include="Assets\Source\Epic Toon FX\Demo\Scripts\ETFXButtonScript.cs" />
+    <Compile Include="Assets\Scripts\UI\Portal_Contraller.cs" />
     <Compile Include="Assets\Source\Epic Toon FX\Demo\Scripts\VFX Library\ParticleEffectsLibrary.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\ColorSwap\ColorSwap_PixelHeroes.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\StormMage.cs" />
@@ -101,7 +102,6 @@
     <Compile Include="Assets\Source\Epic Toon FX\Demo\Scripts\ETFXProjectileScript.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Rogue.cs" />
     <Compile Include="Assets\Scripts\Hero\AttckItem.cs" />
-    <Compile Include="Assets\Scripts\UI\Portal_Contraller.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
