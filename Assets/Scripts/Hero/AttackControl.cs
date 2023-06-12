@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 //**********
 //工程
@@ -18,6 +17,8 @@ public class AttackControl : MonoBehaviour
 
     private double waitsecond;
 
+    bool is_attack=false;
+
     //特效升级
     public static int level = 2;
 
@@ -35,23 +36,27 @@ public class AttackControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (!is_attack)
         {
-            waitsecond = 0.25;
-            anim.SetTrigger("NomalAttack");
-            StartCoroutine(ActivateTrigger(nomal, 0.5f)); // 激活nomal GameObject的触发器0.5秒
-            StartCoroutine(ActivateAttack(0.25f));
-        }
-        if (Input.GetKeyUp(KeyCode.K) && nowcd <= 0)
-        {
-            anim.SetTrigger("SkillAttack");
-            waitsecond = 1;
-            StartCoroutine(ActivateTrigger(attack, 0.5f)); // 激活attack GameObject的触发器1秒
-                                                           //技能进入cd
-            nowcd = skillcd;
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                waitsecond = 0.25;
+                anim.SetTrigger("NomalAttack");
+                StartCoroutine(ActivateTrigger(nomal, 0.5f)); // 激活nomal GameObject的触发器0.5秒
+                StartCoroutine(ActivateAttack(0.25f));
+            }
+            if (Input.GetKeyUp(KeyCode.K) && nowcd <= 0)
+            {
+                anim.SetTrigger("SkillAttack");
+                waitsecond = 1;
+                StartCoroutine(ActivateTrigger(attack, 1f)); // 激活attack GameObject的触发器1秒
+                                                             //技能进入cd
+                nowcd = skillcd;
 
-            cdEmpty.GetComponent<SkillController>().cdstart(nowcd);//开始cd
+                cdEmpty.GetComponent<SkillController>().cdstart(nowcd);//开始cd
+            }
         }
+        
         if (nowcd > 0)
         {
             nowcd -= Time.deltaTime;
@@ -84,10 +89,11 @@ public class AttackControl : MonoBehaviour
     // 激活触发器并在指定时间后关闭
     private IEnumerator ActivateTrigger(GameObject triggerObject, float duration)
     {
-
+        is_attack = true;
         yield return new WaitForSeconds(duration);
 
         triggerObject.SetActive(true);
+        is_attack = false;
         StartCoroutine(CloseTrigger(triggerObject));
         //triggerObject.SetActive(false);
     }
@@ -97,5 +103,12 @@ public class AttackControl : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
 
         triggerObject.SetActive(false);
+    }
+    public IEnumerator ToDeath()
+    {
+        anim.SetTrigger("Death");
+        is_attack = true;
+        yield return new WaitForSeconds(2f);
+        Destroy(gameObject);
     }
 }

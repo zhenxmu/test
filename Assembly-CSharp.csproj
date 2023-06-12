@@ -101,6 +101,7 @@
     <Compile Include="Assets\Source\Epic Toon FX\Demo\Scripts\ETFXProjectileScript.cs" />
     <Compile Include="Assets\Source\Pixel Heroes Pack\Demo\Scripts\Rogue.cs" />
     <Compile Include="Assets\Scripts\Hero\AttckItem.cs" />
+    <Compile Include="Assets\Scripts\UI\Portal_Contraller.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

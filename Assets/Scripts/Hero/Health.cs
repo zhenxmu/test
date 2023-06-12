@@ -1,15 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
     //生命值系统
     public int maxHealth;
     int currentHealth;
+    public float death_time;
     
     public int health { get { return currentHealth; } }//属性返回当前生命值
     // Start is called before the first frame update
@@ -30,13 +27,19 @@ public class Health : MonoBehaviour
         {
             if (gameObject.tag.Equals("Hero"))
             {
-                SceneManager.LoadScene("StartScene");
+                StartCoroutine(this.GetComponent<AttackControl>().ToDeath());
+                SceneManager.LoadScene("DeathScene");
             }
             if (gameObject.name.Equals("Warlock"))
             {
-                SceneManager.LoadScene("OldTown");
+                StartCoroutine(this.GetComponent<MasterController>().ToDeath(1.3f));
+                Debug.Log("开始死亡");
             }
-            Destroy(gameObject);
+            if (gameObject.tag.Equals("Enermy"))
+            {
+                Destroy(gameObject);
+                Debug.Log("开始死亡");
+            }
 
         }
         

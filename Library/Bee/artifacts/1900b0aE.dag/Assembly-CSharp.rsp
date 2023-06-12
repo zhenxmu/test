@@ -357,6 +357,7 @@
 "Assets/Scripts/Hero/MoveControler.cs"
 "Assets/Scripts/UI/HMPController.cs"
 "Assets/Scripts/UI/LoadScene.cs"
+"Assets/Scripts/UI/Portal_Contraller.cs"
 "Assets/Scripts/UI/SkillController.cs"
 "Assets/Scripts/UI/StartScene.cs"
 "Assets/Scripts/UI/talk.cs"

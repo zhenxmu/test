@@ -1,0 +1,349 @@
+Using pre-set license
+Built from '2021.3/china_unity/release' branch; Version is '2021.3.23f1c1 (b82b1f861975) revision 12069663'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 16176 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+E:\Software\Unity\Editor\2021.3.23f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+E:/学习/游戏设计与设计思维/The Lost Tablets/test
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+53688
+Successfully changed project path to: E:/学习/游戏设计与设计思维/The Lost Tablets/test
+E:/学习/游戏设计与设计思维/The Lost Tablets/test
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [29264] Host "[IP] 192.168.3.16 [Port] 0 [Flags] 2 [Guid] 499114686 [EditorId] 499114686 [Version] 1048832 [Id] WindowsEditor(7,Yuloliss) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [29264] Host "[IP] 192.168.3.16 [Port] 0 [Flags] 2 [Guid] 499114686 [EditorId] 499114686 [Version] 1048832 [Id] WindowsEditor(7,Yuloliss) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+AS: AutoStreaming module initializing.
+Refreshing native plugins compatible for Editor in 77.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.23f1c1 (b82b1f861975)
+[Subsystems] Discovering subsystems at path E:/Software/Unity/Editor/2021.3.23f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/学习/游戏设计与设计思维/The Lost Tablets/test/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+    Vendor:   NVIDIA
+    VRAM:     6023 MB
+    Driver:   31.0.15.1700
+Initialize mono
+Mono path[0] = 'E:/Software/Unity/Editor/2021.3.23f1c1/Editor/Data/Managed'
+Mono path[1] = 'E:/Software/Unity/Editor/2021.3.23f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Software/Unity/Editor/2021.3.23f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56460
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Software/Unity/Editor/2021.3.23f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005554 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 63.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.559 seconds
+Domain Reload Profiling:
+	ReloadAssembly (560ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (357ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (89ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (203ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (64ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (93ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007829 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\学习\游戏设计与设计思维\The Lost Tablets\test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.858 seconds
+Domain Reload Profiling:
+	ReloadAssembly (858ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (668ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (202ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (294ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (201ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (56.1 KB). Loaded Objects now: 3494.
+Memory consumption went from 122.9 MB to 122.9 MB.
+Total: 2.243700 ms (FindLiveObjects: 0.193400 ms CreateObjectMapping: 0.075100 ms MarkObjects: 1.902200 ms  DeleteObjects: 0.071900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1630379.302675 seconds.
+  path: Assets/Source/Epic Toon FX/Sound/etfx_shoot_nuke02.wav
+  artifactKey: Guid(3e06c45e3372dd345b50a642fe86616d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/Epic Toon FX/Sound/etfx_shoot_nuke02.wav using Guid(3e06c45e3372dd345b50a642fe86616d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dfc53862b038600e24ca84eec8d657e') in 0.089884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Source/Epic Toon FX/Sound/etfx_shoot_laser.wav
+  artifactKey: Guid(b45b19776b2e15e48947a75b76ccca86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/Epic Toon FX/Sound/etfx_shoot_laser.wav using Guid(b45b19776b2e15e48947a75b76ccca86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe17f186883d7b2d52b03623465f6f5') in 0.006919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Source/Epic Toon FX/Sound/etfx_shoot_energy01.wav
+  artifactKey: Guid(08ef3735b9527d54ab97d0e9fc9d505d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/Epic Toon FX/Sound/etfx_shoot_energy01.wav using Guid(08ef3735b9527d54ab97d0e9fc9d505d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83d14e910281a4add5903ebac9db9c61') in 0.007043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Source/Epic Toon FX/Sound/etfx_explosion_liquid2.wav
+  artifactKey: Guid(3a0e3471cca4f314685eaa9f91440f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/Epic Toon FX/Sound/etfx_explosion_liquid2.wav using Guid(3a0e3471cca4f314685eaa9f91440f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2699bf8cd4c876414bcc36bc1e2afae') in 0.006679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Source/Epic Toon FX/Sound/etfx_shoot_grenade.wav
+  artifactKey: Guid(a76b32836dc7cc44aa9a52f0694ee199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/Epic Toon FX/Sound/etfx_shoot_grenade.wav using Guid(a76b32836dc7cc44aa9a52f0694ee199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b675985bfe0857deaf5a19998ed6e16') in 0.006397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Source/Epic Toon FX/Models/ETFX_MagicWall.FBX
+  artifactKey: Guid(8081d52aaf7f4654ba506eb043914cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/Epic Toon FX/Models/ETFX_MagicWall.FBX using Guid(8081d52aaf7f4654ba506eb043914cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c70aab5a79642a5b3578a8938c1ecef5') in 0.168186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Source/Epic Toon FX/Sound/etfx_shoot_storm.wav
+  artifactKey: Guid(73f34590ca4a9b6409f7d3d29781d2ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/Epic Toon FX/Sound/etfx_shoot_storm.wav using Guid(73f34590ca4a9b6409f7d3d29781d2ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '465a9edc621cdad7f2d061ef0fee24b3') in 0.006714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Source/Epic Toon FX/Sound/etfx_explosion_plasma.wav
+  artifactKey: Guid(4e9bff56ee93c6f42b214141e44e763d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/Epic Toon FX/Sound/etfx_explosion_plasma.wav using Guid(4e9bff56ee93c6f42b214141e44e763d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1db51b61cc3027cfa112399705dfd87') in 0.006285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.591772 seconds.
+  path: Assets/Source/传送门/Portal_100x100px2.png
+  artifactKey: Guid(d25b737a77914294cba5689532baa51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Portal_100x100px2.png using Guid(d25b737a77914294cba5689532baa51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1beff3f4c25aab8bb64b88d7d3684db') in 0.058306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Source/传送门/Portal_100x100px7.png
+  artifactKey: Guid(6198b655abccef54e9f2c85eeb04f0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Portal_100x100px7.png using Guid(6198b655abccef54e9f2c85eeb04f0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ba93a17f4806a3db72cff45cccc299c') in 0.011160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Source/传送门/Portal_100x100px30.png
+  artifactKey: Guid(cbb35c6e4f0ea2f4aa5f7b194a7c17b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Portal_100x100px30.png using Guid(cbb35c6e4f0ea2f4aa5f7b194a7c17b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48775231923db6e9060946796fc569a5') in 0.019236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Source/传送门/Portal_100x100px11.png
+  artifactKey: Guid(1876a4eeba4b6a545ba69cfc69c6b33e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Portal_100x100px11.png using Guid(1876a4eeba4b6a545ba69cfc69c6b33e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '817df50de9565b687070cf5e12b0a619') in 0.014360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Source/传送门/Portal_100x100px14.png
+  artifactKey: Guid(946097e51907a1f4dab12b941a4af5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Portal_100x100px14.png using Guid(946097e51907a1f4dab12b941a4af5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '039e8d78c186a3838e1b559b0df7db67') in 0.014850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Source/传送门/Portal_100x100px39.png
+  artifactKey: Guid(c782e8056a91871458730649343b3873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Portal_100x100px39.png using Guid(c782e8056a91871458730649343b3873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7ab68efc8019fb70d43ecf12671091f') in 0.022817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Source/传送门/Portal_100x100px6.png
+  artifactKey: Guid(0749a7c509a12774b82172a4e8eb5a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Portal_100x100px6.png using Guid(0749a7c509a12774b82172a4e8eb5a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5dc882b9843e628658d1c70423c1bc0') in 0.017238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Source/传送门/Portal_100x100px5.png
+  artifactKey: Guid(ad56d091eaafccf4fa9439a322c3f7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Portal_100x100px5.png using Guid(ad56d091eaafccf4fa9439a322c3f7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a0c88b8d7284fdbeea8c2981f1b32a3') in 0.018760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Source/传送门/Portal_100x100px9.png
+  artifactKey: Guid(fa517724f6f37b04185779a12c043033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Portal_100x100px9.png using Guid(fa517724f6f37b04185779a12c043033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4551f7282245febe26deadaa7b672038') in 0.026372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Source/传送门/Portal_100x100px38.png
+  artifactKey: Guid(0bcf7c8c51a7b5045bf3dcc3e55c3464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Portal_100x100px38.png using Guid(0bcf7c8c51a7b5045bf3dcc3e55c3464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd57c3c9a89e3ffcd33f879b60710a2cd') in 0.005688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Source/传送门/Portal_100x100px29.png
+  artifactKey: Guid(bc974091af003984898c4f1236e7d292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Portal_100x100px29.png using Guid(bc974091af003984898c4f1236e7d292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c52f0355da46e84c962c1a35ce4cf1b1') in 0.006405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.405861 seconds.
+  path: Assets/Source/传送门/Materials/Portal_100x100px4.mat
+  artifactKey: Guid(f60f5cac137e0804fb7ab8540eb0cb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Materials/Portal_100x100px4.mat using Guid(f60f5cac137e0804fb7ab8540eb0cb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065323dca713afab53e40163ea812ce2') in 0.025865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Source/传送门/Materials/Portal_100x100px14.mat
+  artifactKey: Guid(8f63baa882965d24d890198b52da7f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Materials/Portal_100x100px14.mat using Guid(8f63baa882965d24d890198b52da7f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a9d28614d454969a190f31d2583cd7') in 0.012545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Source/传送门/Materials/Portal_100x100px18.mat
+  artifactKey: Guid(0f4d0eb071dd1024ab8d8b902b28b837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Materials/Portal_100x100px18.mat using Guid(0f4d0eb071dd1024ab8d8b902b28b837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eb6e6c81c12bba665b465c7d616a409') in 0.010864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Source/传送门/Materials/Portal_100x100px15.mat
+  artifactKey: Guid(56dbd71b6fae14c48a3e8943472f7943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Materials/Portal_100x100px15.mat using Guid(56dbd71b6fae14c48a3e8943472f7943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca1459a1cf5d34fcade6ea5023a6d6dd') in 0.011998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Source/传送门/Materials/Portal_100x100px23.mat
+  artifactKey: Guid(76a8e067acfe0b44b903ef34eeefb541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Materials/Portal_100x100px23.mat using Guid(76a8e067acfe0b44b903ef34eeefb541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38614b99fe81e5b3ddb112db8a4603db') in 0.008443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Source/传送门/Materials/Portal_100x100px22.mat
+  artifactKey: Guid(6b8ff5dedf2305a468198f0daa806c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Materials/Portal_100x100px22.mat using Guid(6b8ff5dedf2305a468198f0daa806c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89570babaa8351333ece435353d8bf4a') in 0.025361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Source/传送门/Materials/Portal_100x100px36.mat
+  artifactKey: Guid(98cb7aaa23a86ba4fba2f16f746d46a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Materials/Portal_100x100px36.mat using Guid(98cb7aaa23a86ba4fba2f16f746d46a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a17e8c39bb4a445d94c421eedd2709d') in 0.008481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Source/传送门/Materials/Portal_100x100px12.mat
+  artifactKey: Guid(23211bfd1bcc3474497b53f0da729149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Materials/Portal_100x100px12.mat using Guid(23211bfd1bcc3474497b53f0da729149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09012389eaf10f83ed2d8f2657960325') in 0.010344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Source/传送门/Materials/Portal_100x100px34.mat
+  artifactKey: Guid(d3aecdcfdecca4444a1e52bcf03ce5f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Materials/Portal_100x100px34.mat using Guid(d3aecdcfdecca4444a1e52bcf03ce5f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c6a2faa31cc3135d3c68644bfb3c067') in 0.015659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Source/传送门/Materials/Portal_100x100px28.mat
+  artifactKey: Guid(6af5c7629ec24594996730313bac3346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Materials/Portal_100x100px28.mat using Guid(6af5c7629ec24594996730313bac3346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f8596f7b60b20351f320d34987e121') in 0.013194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Source/传送门/Materials/Portal_100x100px37.mat
+  artifactKey: Guid(8df5f5c802683f84388c76ae76402760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Source/传送门/Materials/Portal_100x100px37.mat using Guid(8df5f5c802683f84388c76ae76402760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df627fe9c43934f7a96cfb14d59bfbc7') in 0.008526 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -7,7 +7,7 @@ public class AttackCheck : MonoBehaviour
     // Start is called before the first frame update
     public int currentDamageAmount; // 当前伤害值
     public double waitsecond;
-    private IEnumerator OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enermy"))
         {
@@ -16,7 +16,7 @@ public class AttackCheck : MonoBehaviour
             Animator anim2 = other.GetComponent<Animator>();
             anim2.SetTrigger("Take_Damage");
 
-            yield return new WaitForSeconds((float)waitsecond);
+            //yield return new WaitForSeconds((float)waitsecond);
 
             GameObject bloodSplat = Instantiate(Resources.Load("BloodExplosion2D") as GameObject, other.transform.position, Quaternion.identity);
             // 减少敌人的生命值
@@ -28,8 +28,8 @@ public class AttackCheck : MonoBehaviour
                 audioSource.clip = Resources.Load<AudioClip>("etfx_explosion_rocket");
                 audioSource.Play();
             }
-            yield return new WaitForSeconds(2f);
-            Destroy(bloodSplat);
+            //yield return new WaitForSeconds(2f);
+            StartCoroutine(blood_Destory(bloodSplat));
         }
         else if (other.CompareTag("green"))
         {
@@ -39,7 +39,7 @@ public class AttackCheck : MonoBehaviour
             Animator anim2 = other.GetComponent<Animator>();
             anim2.SetTrigger("Take_Damage");
 
-            yield return new WaitForSeconds((float)waitsecond);
+            //yield return new WaitForSeconds((float)waitsecond);
 
             GameObject bloodSplat = Instantiate(Resources.Load("GreenBloodExplosion2D") as GameObject, other.transform.position, Quaternion.identity);
             // 减少敌人的生命值
@@ -52,8 +52,13 @@ public class AttackCheck : MonoBehaviour
                 enemyHealth.ChangeHealth(-currentDamageAmount);
 
             }
-            yield return new WaitForSeconds(2f);
-            Destroy(bloodSplat);
+            //yield return new WaitForSeconds(2f);
+            StartCoroutine(blood_Destory(bloodSplat));
         }
+    }
+    IEnumerator blood_Destory(GameObject bloodSplat)
+    {
+        yield return new WaitForSeconds(2f);
+        Destroy(bloodSplat);
     }
 }

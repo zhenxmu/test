@@ -20,7 +20,10 @@ public class MasterController : MonoBehaviour
     public GameObject attack;
     public GameObject hp;
     public Slider hp_slider;
-   
+
+    public GameObject portal;
+
+    bool being_death=false;
     // Start is called before the first frame update
     public void Start()
     {
@@ -35,8 +38,13 @@ public class MasterController : MonoBehaviour
         if (hp.activeSelf)
         {
             hp_slider.maxValue = gameObject.GetComponent<Health>().maxHealth;
-            hp_slider.value= gameObject.GetComponent<Health>().health;
+            hp_slider.value = gameObject.GetComponent<Health>().health;
         }
+        if (being_death)
+        {
+            return;
+        }
+        
         if (target != null)
         {
             float distance = (transform.position - target.position).sqrMagnitude;
@@ -103,17 +111,16 @@ public class MasterController : MonoBehaviour
         triggerObject.SetActive(false);
     }
     // ‹…À∫¶≈–∂œ
-    public void TakeDamage(int damage)
+    public IEnumerator ToDeath(float duration)
     {
-        health -= damage;
-        animator.SetBool("Run", false);
-        animator.SetBool("Damage", true);
-        //À¿Õˆ≈–∂œ
-        if (health <= 0)
-        {
-            animator.SetBool("Death", true);
-            Destroy(gameObject);
-        }
+        animator.SetTrigger("Death");
+        being_death = true;
+        yield return new WaitForSeconds(duration);
+        portal.SetActive(true);
+        Vector3 po = this.transform.position;
+        po.y += 1.2f;
+        portal.transform.position = po;
+        Destroy(gameObject);
     }
 }
 

@@ -7,6 +7,7 @@ class Words
 {
     public int who;
     public string word;
+    
     public Words(int who,string word)
     {
         this.who = who;
@@ -26,7 +27,9 @@ public class talk : MonoBehaviour
     public GameObject hero;
     public GameObject boss;
     public GameObject help;
-    
+
+    public GameObject portal;
+
     List<Words> talklist = new List<Words>();
     // Update is called once per frame
     private void Start()
@@ -73,6 +76,7 @@ public class talk : MonoBehaviour
                     boss_talk.SetActive(false);
                     hero_talk.SetActive(false);
                     talkcount = 0;
+                    portal.SetActive(true);
                 }
                 else
                 {
@@ -96,6 +100,9 @@ public class talk : MonoBehaviour
         else
         {
             help.SetActive(false);
+            boss_talk.SetActive(false);
+            hero_talk.SetActive(false);
+            talkcount = 0;
         }
     }
 
