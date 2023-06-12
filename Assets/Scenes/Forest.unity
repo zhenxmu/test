@@ -1000,6 +1000,26 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7021707385743867465, guid: 5ef66aab23cb4544ead1b111eb59f7de, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021707385743867465, guid: 5ef66aab23cb4544ead1b111eb59f7de, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 7021707385743867465, guid: 5ef66aab23cb4544ead1b111eb59f7de, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021707385743867465, guid: 5ef66aab23cb4544ead1b111eb59f7de, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8595882
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021707385743867465, guid: 5ef66aab23cb4544ead1b111eb59f7de, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8607253
+      objectReference: {fileID: 0}
     - target: {fileID: 7021707385743867466, guid: 5ef66aab23cb4544ead1b111eb59f7de, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
