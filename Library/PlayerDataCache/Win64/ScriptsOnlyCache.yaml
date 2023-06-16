@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - BallController
     - BorneController
     - Enermy_Attack_Check
+    - EpicToonFX.ETFXRotation
     - FireController
     - HMPController
     - Health
@@ -32,8 +33,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -370,10 +373,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 50
@@ -463,11 +462,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
@@ -486,6 +491,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2900}
     - Class: 114
+      Script: {instanceID: 2960}
+    - Class: 114
       Script: {instanceID: 3020}
     - Class: 114
       Script: {instanceID: 3956}
@@ -493,6 +500,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4200}
     - Class: 114
       Script: {instanceID: 4862}
+    - Class: 114
+      Script: {instanceID: 5464}
     - Class: 114
       Script: {instanceID: 5524}
     - Class: 114
@@ -1228,7 +1237,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: cd2134185590037ee8d0e15fc0fb4b1f
+      Hash: bd148eeb1e90644b07412ea76a4bc156
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AttackCheck
@@ -1576,5 +1585,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/OldTown.unity
   - Assets/Scenes/DeathScene.unity
   - Assets/Scenes/EndScene.unity
-  playerPath: "E:/\u5B66\u4E60/\u6E38\u620F\u8BBE\u8BA1\u4E0E\u8BBE\u8BA1\u601D\u7EF4/The
-    Lost Tablets/The Lost Tablets/The Lost Tablets.exe"
+  playerPath: "E:/\u5B66\u4E60/\u6E38\u620F\u8BBE\u8BA1\u4E0E\u8BBE\u8BA1\u601D\u7EF4/\u7B2C29\u7EC4-Design
+    Wizards/The Lost Tablets-\u53EF\u6267\u884C\u7A0B\u5E8F/The Lost Tablets.exe"

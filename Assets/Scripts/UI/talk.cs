@@ -35,15 +35,15 @@ public class talk : MonoBehaviour
     private void Start()
     {
         //0为主角，1为boss
-        talklist.Add(new Words(0, "你对我有意见吗？"));
-        talklist.Add(new Words(1, "你对我有意见吗？"));
-        talklist.Add(new Words(0, "你对我有意见吗？"));
-        talklist.Add(new Words(1, "好的，我认为我们需要更多的合作和沟通。"));
-        talklist.Add(new Words(1, "我同意你的观点，但是我认为现在我们需要先解决这个问题，然后再考虑如何加强合作和沟通。"));
-        talklist.Add(new Words(0, "是的，这个问题确实很紧迫，但是我认为我们不能只是应急处理，而是要从根本上解决它。"));
-        talklist.Add(new Words(0, "你说得对，我们需要彻底解决这个问题。那么你有什么想法吗？"));
-        talklist.Add(new Words(0, "我认为我们需要制定一个详细的计划，并明确每个人的责任和角色。同时，我们也需要更频繁地开会，以确保大家都在同一个页面上。"));
-        talklist.Add(new Words(1, "这听起来是个好主意。我们可以把我们的想法和建议整合起来，然后在下一次会议上讨论。好的，我会准备一份计划，并把它发给你们。我期待我们的下一次会议。”"));
+        talklist.Add(new Words(0, "这里是你的梦境？好热闹的小镇……"));
+        talklist.Add(new Words(1, "这里是我的家乡，达格利安郊外的一座小城镇……你是谁？！怎么会在我梦里！"));
+        talklist.Add(new Words(0, "很抱歉，你已经秽蜕成碑魔了。"));
+        talklist.Add(new Words(1, "碑魔……谁能告诉我为什么会这样？这些怪物是从哪里冒出来的？！"));
+        talklist.Add(new Words(1, "我正在调查……艾默曼林分会的术士们还剩下多少人？"));
+        talklist.Add(new Words(0, "我不知道，我好像一直镇守在这里……如果你要继续走下去……不要去碰那根石柱！"));
+        //talklist.Add(new Words(0, "你说得对，我们需要彻底解决这个问题。那么你有什么想法吗？"));
+        //talklist.Add(new Words(0, "我认为我们需要制定一个详细的计划，并明确每个人的责任和角色。同时，我们也需要更频繁地开会，以确保大家都在同一个页面上。"));
+        //talklist.Add(new Words(1, "这听起来是个好主意。我们可以把我们的想法和建议整合起来，然后在下一次会议上讨论。好的，我会准备一份计划，并把它发给你们。我期待我们的下一次会议。”"));
     }
     void Update()
     {

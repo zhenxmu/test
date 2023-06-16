@@ -33,11 +33,15 @@ public class Health : MonoBehaviour
             if (gameObject.name.Equals("Warlock"))
             {
                 StartCoroutine(this.GetComponent<MasterController>().ToDeath(1.3f));
+                AttackControl.level += 2;
+                Debug.Log("主角等级" + AttackControl.level);
                 Debug.Log("开始死亡");
             }
             if (gameObject.tag.Equals("Enermy"))
             {
                 Destroy(gameObject);
+                AttackControl.level += 1;
+                Debug.Log("主角等级" + AttackControl.level);
                 Debug.Log("开始死亡");
             }
 

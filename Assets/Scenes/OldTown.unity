@@ -747,7 +747,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &314527314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21368,6 +21368,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4095888084760168582, guid: 57620e193b26c3546bbfb804729f2aa2, type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6279868986112492674, guid: 57620e193b26c3546bbfb804729f2aa2, type: 3}
       propertyPath: m_Name
       value: Hero
@@ -21390,7 +21394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6279868986112492676, guid: 57620e193b26c3546bbfb804729f2aa2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.26
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 6279868986112492676, guid: 57620e193b26c3546bbfb804729f2aa2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -39150,6 +39154,10 @@ PrefabInstance:
     - target: {fileID: 3001069861487045270, guid: 8adbebf67d781694687ebf876a04db35, type: 3}
       propertyPath: m_Name
       value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 3001069861487045270, guid: 8adbebf67d781694687ebf876a04db35, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8adbebf67d781694687ebf876a04db35, type: 3}

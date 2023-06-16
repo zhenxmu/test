@@ -414,7 +414,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u5267\u60C5"
+  m_text: "\u8FD9\u91CC\u5DF2\u7ECF\u63A5\u8FD1\u827E\u9ED8\u66FC\u6797\u7684\u6838\u5FC3\uFF0C\u5404\u79CD\u53EF\u6015\u7684\u7891\u9B54\u5728\u6B64\u6A2A\u884C\uFF0C\u827E\u767B\u5FC5\u987B\u7A7F\u8FC7\u7891\u9B54\u4EEC\u7684\u5305\u56F4\uFF0C\u627E\u5230\u5206\u4F1A\u4F1A\u957F\uFF0C\u8C03\u67E5\u96F7\u66FC\u77F3\u67F1\u7684\u6765\u9F99\u53BB\u8109\u3002\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f96cdcf66ea05214694846754bd3dd76, type: 2}
   m_sharedMaterial: {fileID: -2672791980574483772, guid: f96cdcf66ea05214694846754bd3dd76, type: 2}

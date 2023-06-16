@@ -20,7 +20,7 @@ public class AttackControl : MonoBehaviour
     bool is_attack=false;
 
     //特效升级
-    public static int level = 2;
+    public static int level = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -50,13 +50,19 @@ public class AttackControl : MonoBehaviour
                 anim.SetTrigger("SkillAttack");
                 waitsecond = 1;
                 StartCoroutine(ActivateTrigger(attack, 1f)); // 激活attack GameObject的触发器1秒
-                                                             //技能进入cd
+                StartCoroutine(ActivateAttack2(1f));                                            //技能进入cd
                 nowcd = skillcd;
 
                 cdEmpty.GetComponent<SkillController>().cdstart(nowcd);//开始cd
             }
         }
-        
+        //if (level % 1 == 0) // check if level has been incremented
+        //{
+            
+        //    GameObject magicBuff = Instantiate(Resources.Load("MagicBuffBlue") as GameObject, nomal.transform.position , Quaternion.identity);
+        //    Destroy(magicBuff, 1f); // destroy the object after 1 second
+        //}
+
         if (nowcd > 0)
         {
             nowcd -= Time.deltaTime;
@@ -73,17 +79,65 @@ public class AttackControl : MonoBehaviour
     private IEnumerator ActivateAttack(float duration)//激活特效
     {
         yield return new WaitForSeconds(duration);
+       
         for (int i = 0; i < level; i++)
         {
-            Vector3 offset = new Vector3(i * 0.1f, i * 0.1f, 0); // adjust the offset as needed
-            GameObject bloodSplat = Instantiate(Resources.Load("SwordHitBlueLegacy") as GameObject, nomal.transform.position + offset, Quaternion.identity);
-            yield return new WaitForSeconds(0.1f);
-            Destroy(bloodSplat);
+            Vector3 offset = new Vector3(i * 0.1f,0, 0); // adjust the offset as needed
+            GameObject bloodSplat = Instantiate(Resources.Load("MagicEnchantBlue") as GameObject, nomal.transform.position + offset, Quaternion.identity);
+            GameObject bloodSplat2=null;
+            GameObject bloodSplat3 = null;
+            GameObject bloodSplat4 = null;
+            if (i>1)
+            {
+              bloodSplat2 = Instantiate(Resources.Load("MagicPillarBlastBlue") as GameObject, nomal.transform.position + offset, Quaternion.identity);
+
+            }
+            if(i>4)
+            {
+                bloodSplat4 = Instantiate(Resources.Load("MagicBuffBlue") as GameObject, nomal.transform.position + offset, Quaternion.identity);
+            }
+            if(i>6)
+            {
+                bloodSplat3 = Instantiate(Resources.Load("MagicEnchantBlue") as GameObject, nomal.transform.position + offset, Quaternion.identity);
+            }
+            yield return new WaitForSeconds(0.01f);
+           
         }
         AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.clip = Resources.Load<AudioClip>("etfx_explosion_lightning");
         audioSource.Play();
 
+    }
+    private IEnumerator ActivateAttack2(float duration)//激活特效
+    {
+        yield return new WaitForSeconds(duration);
+
+        for (int i = 0; i < level; i++)
+        {
+            Vector3 offset = new Vector3(i * 0.3f, 0, 0); // adjust the offset as needed
+           
+            GameObject bloodSplat2 = null;
+            GameObject bloodSplat3 = null;
+            GameObject bloodSplat4 = null;
+            if (i > 1)
+            {
+                bloodSplat2 = Instantiate(Resources.Load("MagicPillarBlastBlue") as GameObject, nomal.transform.position + offset, Quaternion.identity);
+
+            }
+            if (i > 4)
+            {
+                bloodSplat4 = Instantiate(Resources.Load("MagicBuffBlue") as GameObject, nomal.transform.position + offset, Quaternion.identity);
+            }
+            if (i > 6)
+            {
+                bloodSplat3 = Instantiate(Resources.Load("MagicEnchantBlue") as GameObject, nomal.transform.position + offset, Quaternion.identity);
+            }
+            yield return new WaitForSeconds(0.03f);
+            
+        }
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.clip = Resources.Load<AudioClip>("etfx_explosion_lightning");
+        audioSource.Play();
 
     }
     // 激活触发器并在指定时间后关闭

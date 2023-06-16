@@ -302,7 +302,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u7ED3\u675F\u8BCD"
+  m_text: "\u611F\u8C22\u6E38\u73A9\u6E38\u620FDemo\uFF01\n\t\u2014\u2014Design Wizards"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f96cdcf66ea05214694846754bd3dd76, type: 2}
   m_sharedMaterial: {fileID: -2672791980574483772, guid: f96cdcf66ea05214694846754bd3dd76, type: 2}

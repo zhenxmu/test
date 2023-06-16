@@ -161,7 +161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u4F60\u6B7B\u4E86"
+  m_text: "\u4F60\u88AB\u77F3\u7891\u6C61\u67D3\n\u6210\u4E3A\u4E86\u65E0\u6570\u7891\u9B54\u7684\u4E00\u5458\u3002"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f96cdcf66ea05214694846754bd3dd76, type: 2}
   m_sharedMaterial: {fileID: -2672791980574483772, guid: f96cdcf66ea05214694846754bd3dd76, type: 2}
