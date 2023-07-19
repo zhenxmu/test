@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":8.6304349899292,"y":6.608364582061768,"z":-0.10834304243326187},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":16.383127212524415,"orthographic":true}
+=======
+<<<<<<<< HEAD:testz/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json
+<<<<<<< Updated upstream
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":-23.133216857910158,"y":0.8100758790969849,"z":-0.19252647459506989},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":7.786527633666992,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":-13.610024452209473,"y":-2.3060381412506105,"z":-2.8880183696746828},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":13.851153373718262,"orthographic":true}
+>>>>>>> Stashed changes
+========
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":178.8810577392578,"y":942.7598266601563,"z":14.106085777282715},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":93.28852081298828,"orthographic":true}
+>>>>>>>> main:Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json
+>>>>>>> main

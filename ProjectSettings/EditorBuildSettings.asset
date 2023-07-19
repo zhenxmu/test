@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OldTown.unity
     guid: a68f12c5585030c44972a0a1533a66e8
+<<<<<<< HEAD
+=======
+  - enabled: 1
+    path: Assets/Scenes/DeathScene.unity
+    guid: ccab1bfe8770251478e2ddcad331d2d1
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 3a7fce965a40e6b48a3b5de31093b9ca
+>>>>>>> main
   m_configObjects: {}
